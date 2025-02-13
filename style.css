@@ -1,21 +1,24 @@
 /* Start coding here */
 .container {
-    height: 100vh;
-    background-color: lightgrey;
+    height: calc(100vh - 100px); 
+    background-color: lightgrey; 
     padding: 50px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
 }
 
 .box-1 {
-    height: 25vh;
+    flex: 1; /*1/4 ส่วน */
     background-color: orange;
 }
 
 .box-2 {
-    height: 25vh;
+    flex: 1; /* 1/4 ส่วน */
     background-color: khaki;
 }
 
 .box-3 {
-    height: 50vh;
+    flex: 2; /* 2/4 ส่วน */
     background-color: cornflowerblue;
 }
